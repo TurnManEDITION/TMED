@@ -1,0 +1,264 @@
+		@font-face {								/*шрифт*/
+	font-family: 'Gilroy-Medium';
+	src: url(../fonts/Gilroy-Medium.woff2);
+}
+@font-face {
+	font-family: 'Gilroy-';
+	src: url(../fonts/Gilroy-Bold.woff2);
+}											/*шрифт*/
+html {
+	box-sizing: border-box;
+	background-color: #FFFFFF
+}
+* {
+	box-sizing: inherit;
+}
+a {											/*Убрать подчеркивание*/
+	text-decoration: none;
+	color: inherit;
+}											/*Убрать подчеркивание*/
+ul {										/*Убрать точку*/
+	list-style-type: none;
+	padding: 0;
+}											/*Убрать точку*/
+.flex {										/*Поставить в строку*/
+	display: flex;
+}											/*Поставить в строку*/
+.container {								/*Ширина и отделка от края*/
+	max-width: 940px;
+	margin: 0 auto;
+}											/*Ширина и отделка от края*/
+.nav {										/*Отделка и черточка*/
+	padding: 30px 0 30px 0;
+	border-bottom: 1px solid #828282;
+}											/*Отделка и черточка*/
+.nav-list {									/*Слова раздельно*/
+	justify-content: space-between;
+}											/*Слова раздельно*/
+.nav-item {									/*Эффект*/
+	position: relative;
+}											/*Эффект*/
+.nav-link {									/*Выделение текста*/
+	font-family: 'Gilroy-Bold', sans-serif;
+	font-style: 18px;
+	font-weight: bold;
+	transition: color 1s ease-in-out;
+	color: #828282;
+}											/*Выделение текста*/
+.nav-link:hover {							/*Черный текст*/
+	color:  black;
+}											/*Черный текст*/
+.nav-link::after {							/*Анимация линии*/
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: black;
+	width: 100%;
+	height: 2px;
+	transform: scaleX(0);
+	transition: transform 1s ease-in-out;
+}											/*Анимация линии*/
+.nav-link:hover::after {					/*Анимация линии*/
+	transform: scaleX(1);
+}											/*Анимация линии*/
+.intro {
+	font-weight: bolder;
+}											/*Выравнивает текст*/
+.intro-description{
+	margin-top: 40px;
+	font-family: sans-serif;
+	justify-content: space-between;
+	align-items: flex-end;
+}											/*Выравнивает текст*/
+.intro-description-name{					/*Отделка*/
+	display: inline;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 48px;
+}											/*Отделка*/
+.intro-description-lang {
+	width: 16px;
+	font-size: 16px;
+	font-weight: bolder;
+	transform: rotate(-90deg);
+
+}
+.separate {
+	width: 2px;
+	height: 16px;
+	margin: 0 3px;
+	background-color: black;
+}
+
+.english-lang {								/*Чуть прозрачный текст*/
+	color: #828282;
+}											/*Чуть прозрачный текст*/
+.intro-img {								/*Настройки img*/
+	margin-top: 30px;
+	margin-bottom: 100px;
+}											/*Настройки img*/
+.info-about-me {							/*Цвет блока*/
+	background-color: #f6f6f6;
+	padding: 120px 0 100px;
+}											/*Цвет блока*/
+h2 {										/*Размер текста*/
+	font-size: 34px;
+	font-family: 'Gilroy-Bold', sans-serif;
+}											/*Размер текста*/
+.info-about-me p {							/*Размер текста*/
+	font-size: 18px;
+	font-family: 'Gilroy-Bold', sans-serif;
+}											/*Размер текста*/
+.about-me-text {							/*Центр-ширина*/
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}											/*Центр-ширина*/
+.skills-title-block {
+	margin-bottom: 69px;
+	text-align: center;
+}
+
+.skills-descr {								/*Центр-размер-цвет*/
+	font-size: 18px;
+	font-family: 'Gilroy-Medium', sans-serif;
+	text-align: center;
+	color: #070707;
+	margin-bottom: 69px;
+}											/*Центр-размер-цвет*/
+.list-skills {								/*Распределение*/
+	justify-content: space-between;
+	padding: 0 0 100px;
+}											/*Распределение*/
+.item-skills {								/*Промежуток между star*/
+	width: 166px;
+	padding: 20px 40px;/**/
+	border-radius: 15px;/**/											
+}											/*Промежуток между star*/
+.item-skills:hover {						/*Item цвет*/
+	background-color: #FF0000;
+	color: #070707;
+	padding: auto;
+}											/*Item цвет*/
+.skill-img {								/*Карточка*/
+	width: 90px;
+	height: 90px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}											/*Карточка*/
+.skills-title {								/*Текст карточкки по середине*/
+	font-size: 14px;
+	color: black;
+	font-family: 'Gilroy-Bold', sans-serif;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}											/*Текст карточкки по середине*/
+.skills-rating {							/*Промежуток между star*/
+	justify-content: space-around;
+}											/*Промежуток между star*/
+.skills-star {								/*Размер star*/
+	width: 25px;
+	height: 25px;
+	padding: 2px;
+}											/*Размер star*/
+input::-webkit-input-placeholder {
+  color: #B6C0A5; 
+  font-style: italic; 
+  background: #E0EFCA;
+}
+input:-moz-placeholder {
+  color: #B6C0A5; 
+  font-style: italic; 
+  background: #E0EFCA;
+}
+input:-ms-input-placeholder {
+  color: #B6C0A5; 
+  font-style: italic; 
+  background: #E0EFCA;
+}
+input::-webkit-input-placeholder {
+  color: #B6C0A5; 
+  font-style: italic; 
+  background: #E0EFCA;
+}
+input:-moz-placeholder {
+  color: #B6C0A5; 
+  font-style: italic; 
+  background: #E0EFCA;
+}
+input:-ms-input-placeholder {
+  color: #B6C0A5; 
+  font-style: italic; 
+  background: #E0EFCA;
+}
+.portfolio {
+	background-color: #f6f6f6;
+}
+.portfolio-title {
+	padding-top: 100px;
+	text-align: center;
+}
+.portfolio-item {
+	margin-bottom: 100px;
+}
+.portfolio-img {
+	display: block;
+	margin: 0 auto;
+	max-width: 940px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+.portfolio-descr {
+	font-family: 'Gilroy-Medium', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+.contacts-title {
+	text-align: center;
+	padding: 10px;
+}
+.contacts-descr {
+	text-align: center;
+	font-family: 'Gilroy-Medium', sans-serif;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.portfolio-list {
+	padding-bottom: 100px;
+}
+.contacts-link {
+	display: table;
+	padding: 15px 30px;
+	background-color: #000;
+	border-radius: 50px;
+	font-family: 'Gilroy-Bold', sans-serif;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.contacts-list {
+	justify-content: center;
+}
+.contacts-item {
+	margin: 10px;
+}
+.contacts-message-descr {
+	font-family: 'Gilroy-Medium', sans-serif;
+	font-size: 14px;
+	text-align: center;
+	color: #828282;
+}
+.swiper {
+	width: 100%;
+}
+.swiper-pagination {
+	position: static;
+}
+.swiper-pagination-bullet-active {
+	background-color: #070707;
+}
